@@ -13,5 +13,13 @@ module.exports = {
         children: ["/page-1a", "/page-1b", "/page-1c"]
       }
     ]
-  }
+  },
+  plugins: [
+    [
+      "@vuepress/plugin-container",
+      {
+        type: "cat"
+      }
+    ]
+  ]
 };
