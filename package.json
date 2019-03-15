@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-container": "^1.0.0-alpha.44"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-alpha.0",
+    "markdown-it-include": "^1.1.0"
   }
 }

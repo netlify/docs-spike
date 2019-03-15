@@ -1,5 +1,6 @@
 module.exports = {
   title: "Title",
+  extend: "@vuepress/theme-default",
   markdown: {
     config: md => {
       md.set({ breaks: true });
@@ -9,6 +10,10 @@ module.exports = {
           permalinkClass: "header-anchor",
           permalinkSymbol: "*"
         })
+      );
+      md.use(require("markdown-it-include"));
+      md.render(
+        "!!!include(dog-left.md)!!!\n\n*your content*\n\n!!!include(dog-right.md)!!!"
       );
     }
   },
@@ -27,10 +32,17 @@ module.exports = {
     ]
   },
   plugins: [
+    ["@vuepress/back-to-top", true],
     [
       "@vuepress/plugin-container",
       {
         type: "cat"
+      }
+    ],
+    [
+      "@vuepress/container",
+      {
+        type: "dog"
       }
     ]
   ]
