@@ -1,9 +1,8 @@
 # Hello Kitten
 
+## Custom container
 ::: cat
-fff
+Checkout my laser eyes!
 :::
 
-::: tip
-hiii
 
