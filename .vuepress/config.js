@@ -1,5 +1,17 @@
 module.exports = {
   title: "Title",
+  markdown: {
+    config: md => {
+      md.set({ breaks: true });
+      md.use(
+        require("markdown-it-anchor", {
+          permalink: true,
+          permalinkClass: "header-anchor",
+          permalinkSymbol: "*"
+        })
+      );
+    }
+  },
   themeConfig: {
     displayAllHeaders: true,
     nav: [
