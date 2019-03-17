@@ -4,20 +4,32 @@ pageClass: custom-page-class
 
 # Hello Kitten
 
+<span class="toc-title">on this page</span>
+
 [[toc]]
 
 
 ## Custom container
 ::: cat
-Checkout my laser eyes!
+hellllllo
 :::
 
-
-::: dog 
-[dog](www.google.com) <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#00AD9F" d="M13.281 16.977c-.271.259-.675.423-1.127.423-.441 0-.839-.158-1.109-.409L5.933 12.84c-.577-.468-.577-1.227 0-1.695.576-.468 1.51-.468 2.087 0l2.66 2.16V4.197c0-.66.66-1.197 1.474-1.197.817 0 1.478.537 1.478 1.199v9.103l2.657-2.157c.576-.468 1.51-.468 2.087 0 .577.468.577 1.227 0 1.695l-5.095 4.137zM7.721 18.6h8.867c.816 0 1.477.537 1.477 1.2 0 .663-.66 1.2-1.477 1.2H7.72c-.816 0-1.478-.537-1.478-1.2 0-.663.662-1.2 1.478-1.2z" />
-</svg>
+::: dog whatever
+[dog](www.google.com)
 :::
+
 
 ## Fancy link widget
-[Gatsby](https://www.gatsbyjs.org/)
+::: fancylink https://whatever.com
+link text
+:::
+
+## Fugiat cillum
+Sint duis in fugiat dolore sunt cupidatat ad. Enim est cupidatat ullamco nostrud minim elit ex ullamco esse pariatur. Nostrud culpa esse amet labore Lorem reprehenderit.
+
+## Ex nisi fugiat
+Officia magna occaecat tempor aliquip. Mollit laborum mollit in ex incididunt irure do. Veniam enim consectetur ad magna adipisicing eu dolore aliquip id in do mollit. Sint consectetur magna proident laboris ut eu id quis eiusmod tempor commodo sint consequat. Dolor proident aliqua eiusmod deserunt reprehenderit ullamco reprehenderit. Cillum non elit non voluptate laborum aute non.
+
+## Ipsum consectetur
+Tempor elit aliqua anim ipsum do consectetur id nisi. Non Lorem eu eu cillum sunt. Minim aliquip id magna sit commodo laborum ipsum sit eu veniam esse sunt nostrud. Ad est excepteur duis ea incididunt ut. Occaecat dolor in ullamco dolor esse laborum aliquip est nisi veniam do proident dolor. Dolor Lorem consectetur elit officia duis aliqua quis magna magna ea. Officia id veniam laborum eiusmod nulla tempor in nisi in.
+

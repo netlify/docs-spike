@@ -1,32 +1,26 @@
+// showing default values
+$accentColor = #3eaf7c
+$textColor = #2c3e50
+$borderColor = #eaecef
+$codeBgColor = #282c34
+
+
 .custom-block
   .custom-block-title
     font-weight 600
     margin-bottom -0.4rem
+  &.dog
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    border-radius 8px
   &.cat
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
     margin 1rem 0
     border-radius 8px
-  &.tip
-    background-color #f3f5f7
-    border-color #42b983
-  &.warning
-    background-color rgba(255,229,100,.3)
-    border-color darken(#ffe564, 35%)
-    color darken(#ffe564, 70%)
-    .custom-block-title
-      color darken(#ffe564, 50%)
-    a
-      color $textColor
-  &.danger
-    background-color #ffe6e6
-    border-color darken(red, 20%)
-    color darken(red, 70%)
-    .custom-block-title
-      color darken(red, 40%)
-    a
-      color $textColor
   &.cat
     background-color #f3f5f7
     border-color darken(purple, 20%)
@@ -35,15 +29,37 @@
       color darken(purple, 40%)
     a
       color $textColor
-
-.table-of-contents
-  float: right;
-  margin-top: -30px;
-  ul
-    list-style-type none
+  &.dog
+    background-color #f3f5f7
+    border-color darken(purple, 20%)
+    color darken(purple, 40%)
+    .custom-block-title
+      color darken(purple, 40%)
+    a
+      color $textColor
 
 .icon.outbound
   color black
+
+.table-of-contents
+  float: right;
+  margin-top: -2em;
+  padding-right: -10em;
+  margin-right: -12em;
+  position: sticky;
+
+  ul
+    list-style-type none
+
+.toc-title
+  color: $textColor;
+  opacity: 0.5
+  text-transform: uppercase
+  font-weight: 700
+  float: right;
+  margin-top:-3em;
+  margin-right: -10.2em;
+  position: sticky;
 
 
 .theme-container.custom-page-class {
@@ -51,13 +67,53 @@
   .sidebar {
     border: none;
     bottom: auto;
+    position: sticky;
+    width: auto;
+    float: left;
+    margin-left: 2em;
+    margin-top: 6em;
+  }
+
+  .content {
+    width: 80%
+  }
+
+  .navbar {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    position: static;
+    margin: auto;
+  }
+
+  .search-box input {
+    cursor: text;
+    width: 30rem;
+    height: 2.6rem;
+    color: #4e6e8e;
+    display: inline-block;
+    border: 1px solid #cfd4db;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 0.5rem 0 2rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background: #fff url(/assets/img/search.83621669.svg) 0.8rem 0.8rem no-repeat;
+    background-size: 1rem;
   }
 
   footer {
-    bottom: 0;
     width: 100%;
     height: 150px;
     color: white;
     background-color: black;
   }
 }
+

@@ -4,6 +4,7 @@ module.exports = {
   markdown: {
     config: md => {
       md.set({ breaks: true });
+      md.use(require("markdown-it"));
       md.use(
         require("markdown-it-anchor", {
           permalink: true,
@@ -18,31 +19,41 @@ module.exports = {
     }
   },
   themeConfig: {
-    displayAllHeaders: true,
-    nav: [
-      { text: "Page 1A", link: "/page-1a.html" },
-      { text: "Page 1B", link: "/page-1b.html" }
-    ],
     sidebar: [
       {
         title: "Topic Group 1",
-        collapsable: false,
+        collapsable: true,
         children: ["/page-1a", "/page-1b", "/page-1c"]
+      },
+      {
+        title: "Topic Group 2",
+        collapsable: false,
+        children: ["/page-2a", "/page-2b", "/page-2c"]
       }
     ]
   },
   plugins: [
     ["@vuepress/back-to-top", true],
     [
-      "@vuepress/plugin-container",
+      "@vuepress/container",
       {
-        type: "cat"
+        type: "cat",
+        before: '<pre class="vue-container"><code>',
+        after: "</code></pre>"
       }
     ],
     [
       "@vuepress/container",
       {
         type: "dog"
+      }
+    ],
+    [
+      "@vuepress/container",
+      {
+        type: "fancylink",
+        before: info => `<a class="fancy" href="${info}">`,
+        after: "</a>"
       }
     ]
   ]
