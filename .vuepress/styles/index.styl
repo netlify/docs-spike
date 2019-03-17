@@ -31,10 +31,10 @@ $codeBgColor = #282c34
       color $textColor
   &.dog
     background-color #f3f5f7
-    border-color darken(purple, 20%)
-    color darken(purple, 40%)
+    border-color darken(blue, 20%)
+    color darken(blue, 40%)
     .custom-block-title
-      color darken(purple, 40%)
+      color darken(blue, 40%)
     a
       color $textColor
 
@@ -43,7 +43,7 @@ $codeBgColor = #282c34
 
 .table-of-contents
   float: right;
-  margin-top: -2em;
+  margin-top: -8em;
   padding-right: -10em;
   margin-right: -12em;
   position: sticky;
@@ -57,7 +57,7 @@ $codeBgColor = #282c34
   text-transform: uppercase
   font-weight: 700
   float: right;
-  margin-top:-3em;
+  margin-top:-9em;
   margin-right: -10.2em;
   position: sticky;
 
@@ -109,6 +109,8 @@ $codeBgColor = #282c34
     background-size: 1rem;
   }
 
+
+
   footer {
     width: 100%;
     height: 150px;
@@ -117,3 +119,31 @@ $codeBgColor = #282c34
   }
 }
 
+table {
+  border-radius: 6px;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  box-shadow: 0 0 0 0.3px #E9EBEB; /* this draws the table border  */ 
+
+  thead tr:first-child {
+    background-color: rgba(223, 226, 229, 0.2)
+  }
+
+  tr {
+    border-top: 2px;
+  }
+
+  th {
+    border: 2px;
+  }
+
+  td {
+    min-width: 80px;
+    border:none;
+  }
+}
+
+
+
+
+
+  

@@ -3,6 +3,7 @@ pageClass: custom-page-class
 ---
 
 # Hello Kitten
+Qui id tempor fugiat dolor do labore ipsum qui enim ex reprehenderit cupidatat mollit. Laboris nostrud nostrud anim do adipisicing amet eu culpa. Ut cupidatat amet exercitation nisi dolor amet cillum. Consectetur tempor quis Lorem ad mollit nostrud mollit eiusmod minim.
 
 <span class="toc-title">on this page</span>
 
@@ -11,21 +12,26 @@ pageClass: custom-page-class
 
 ## Custom container
 ::: cat
-hellllllo
+Check out my laser beams!
 :::
 
-::: dog whatever
-[dog](www.google.com)
+::: dog Shiba
+I'm just a little picky
 :::
 
 
 ## Fancy link widget
 ::: fancylink https://whatever.com
-link text
+Check out the fancy world
 :::
 
-## Fugiat cillum
-Sint duis in fugiat dolore sunt cupidatat ad. Enim est cupidatat ullamco nostrud minim elit ex ullamco esse pariatur. Nostrud culpa esse amet labore Lorem reprehenderit.
+## Markdown table
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| ----- |
+| col 3 is      | right-aligned | Non eiusmod eiusmod do nulla. |
+| col 2 is      | centered      | Sint proident in veniam cupidatat fugiat et occaecat amet velit excepteur mollit anim ut. |
+| zebra stripes | are neat      | Sit anim reprehenderit in nisi ad voluptate do consequat officia. |
+| Hawaiian spam | are tasty     | Aliqua esse sit sunt aliqua laboris elit elit non. |
 
 ## Ex nisi fugiat
 Officia magna occaecat tempor aliquip. Mollit laborum mollit in ex incididunt irure do. Veniam enim consectetur ad magna adipisicing eu dolore aliquip id in do mollit. Sint consectetur magna proident laboris ut eu id quis eiusmod tempor commodo sint consequat. Dolor proident aliqua eiusmod deserunt reprehenderit ullamco reprehenderit. Cillum non elit non voluptate laborum aute non.
