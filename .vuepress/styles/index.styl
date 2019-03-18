@@ -5,6 +5,7 @@ $borderColor = #eaecef
 $codeBgColor = #282c34
 
 
+// Custom container
 .custom-block
   .custom-block-title
     font-weight 600
@@ -30,17 +31,19 @@ $codeBgColor = #282c34
     a
       color $textColor
   &.dog
-    background-color #f3f5f7
-    border-color darken(blue, 20%)
-    color darken(blue, 40%)
+    background-color #E6F7EC
+    border-color #01A194
+    color #01A194
     .custom-block-title
-      color darken(blue, 40%)
+      color #0F504A
     a
-      color $textColor
+      color #0C625B
 
-.icon.outbound
-  color black
+.fancy p::after
+  content " →"
 
+  
+// Table of content
 .table-of-contents
   float: right;
   margin-top: -8em;
@@ -61,7 +64,31 @@ $codeBgColor = #282c34
   margin-right: -10.2em;
   position: sticky;
 
+// Markdown table
+table {
+  border-radius: 6px;
+  border-style: hidden; /* hide standard table (collapsed) border */
+  box-shadow: 0 0 0 0.3px #E9EBEB; /* this draws the table border  */ 
 
+  thead tr:first-child {
+    background-color: rgba(223, 226, 229, 0.2)
+  }
+
+  tr {
+    border-top: 2px;
+  }
+
+  th {
+    border: 2px;
+  }
+
+  td {
+    min-width: 80px;
+    border:none;
+  }
+}
+
+// Page specific custom style
 .theme-container.custom-page-class {
   /* page-specific rules */
   .sidebar {
@@ -116,29 +143,6 @@ $codeBgColor = #282c34
     height: 150px;
     color: white;
     background-color: black;
-  }
-}
-
-table {
-  border-radius: 6px;
-  border-style: hidden; /* hide standard table (collapsed) border */
-  box-shadow: 0 0 0 0.3px #E9EBEB; /* this draws the table border  */ 
-
-  thead tr:first-child {
-    background-color: rgba(223, 226, 229, 0.2)
-  }
-
-  tr {
-    border-top: 2px;
-  }
-
-  th {
-    border: 2px;
-  }
-
-  td {
-    min-width: 80px;
-    border:none;
   }
 }
 

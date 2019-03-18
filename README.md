@@ -15,8 +15,8 @@ Qui id tempor fugiat dolor do labore ipsum qui enim ex reprehenderit cupidatat m
 Check out my laser beams!
 :::
 
-::: dog Shiba
-I'm just a little picky
+::: dog Netlify Note
+If you return a status other than 200 or 204 from one of the event functions shown above, the signup or login for your users will.
 :::
 
 
