@@ -10,18 +10,22 @@ $codeBgColor = #282c34
   .custom-block-title
     font-weight 600
     margin-bottom -0.4rem
-  &.dog
+  &.tip, &.warning, &.danger, &.note
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
     margin 1rem 0
     border-radius 8px
+  &.note
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
   &.cat
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
     margin 1rem 0
-    border-radius 8px
   &.cat
     background-color #f3f5f7
     border-color darken(purple, 20%)
@@ -30,7 +34,7 @@ $codeBgColor = #282c34
       color darken(purple, 40%)
     a
       color $textColor
-  &.dog
+  &.note
     background-color #E6F7EC
     border-color #01A194
     color #01A194

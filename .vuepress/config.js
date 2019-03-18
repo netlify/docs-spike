@@ -65,7 +65,7 @@ module.exports = {
     [
       "@vuepress/container",
       {
-        type: "dog"
+        type: "note"
       }
     ],
     [
