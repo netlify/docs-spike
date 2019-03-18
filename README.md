@@ -2,7 +2,7 @@
 pageClass: custom-page-class
 ---
 
-# Netlify docs 1.0
+# Documentation
 Running a spike to test VuePress for the new docs site. Writing the docs for the docs.
 
 <!-- <span class="toc-title">on this page</span> -->
