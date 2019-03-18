@@ -1,21 +1,10 @@
 module.exports = {
-  title: "Title",
+  title: "Home",
   extend: "@vuepress/theme-default",
   markdown: {
     config: md => {
       md.set({ breaks: true });
       md.use(require("markdown-it"));
-      md.use(
-        require("markdown-it-anchor", {
-          permalink: true,
-          permalinkClass: "header-anchor",
-          permalinkSymbol: "*"
-        })
-      );
-      md.use(require("markdown-it-include"));
-      md.render(
-        "!!!include(dog-left.md)!!!\n\n*your content*\n\n!!!include(dog-right.md)!!!"
-      );
     }
   },
   extendPageData($page) {
@@ -39,10 +28,12 @@ module.exports = {
     };
   },
   themeConfig: {
+    displayAllHeaders: true,
     sidebar: [
       {
         title: "Topic Group 1",
         collapsable: true,
+        sidebarDepth: 2,
         children: ["/page-1a", "/page-1b", "/page-1c"]
       },
       {
@@ -54,6 +45,13 @@ module.exports = {
   },
   plugins: [
     ["@vuepress/back-to-top", true],
+    [
+      "@vuepress/active-header-links",
+      {
+        sidebarLinkSelector: ".sidebar-link",
+        headerAnchorSelector: ".header-anchor"
+      }
+    ],
     [
       "@vuepress/container",
       {
