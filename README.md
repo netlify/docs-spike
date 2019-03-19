@@ -3,6 +3,8 @@ pageClass: custom-page-class
 
 ---
 
+[[toc]]
+
 # Documentation
 Running a spike for the new docs site. Writing docs for the docs.
 
