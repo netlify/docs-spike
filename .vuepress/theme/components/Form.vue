@@ -5,12 +5,16 @@
       <p>Your feedback helps us improve these docs</p>
     </div>
     <div class="feedback-icons">
-      <span>
-        <img src="./illo-thumb-up.svg" alt>
-      </span>
-      <span>
-        <img src="./illo-thumb-down.svg" alt>
-      </span>
+      <form name="upvote" method="POST" netlify>
+        <button type="submit" v-on:click="votes">
+          <img src="./illo-thumb-up.svg" alt>
+        </button>
+      </form>
+      <form name="downvote" method="POST" netlify>
+        <span v-on:click="votes" type="submit">
+          <img src="./illo-thumb-down.svg" alt>
+        </span>
+      </form>
     </div>
   </div>
 </template>
@@ -32,4 +36,21 @@ h3,
 p {
   line-height: 0.5;
 }
+
+form {
+  display: inline;
+}
 </style>
+
+<script>
+export default {
+  methods: {
+    votes: function(e) {
+      e.preventDefault();
+      let count = 0;
+      count += 1;
+      console.log(count);
+    }
+  }
+};
+</script>
