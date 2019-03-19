@@ -2,6 +2,8 @@
 sidebar: auto 
 ---
 
+[[toc]]
+
 # Code block
 VuePress uses [Prism](https://prismjs.com/) to highlight language syntax in markdown code blocks, using coloured text. Prism supports a wide variety of programming languages. All you need to do is append a valid language alias to the beginning backticks for the code block:
 
