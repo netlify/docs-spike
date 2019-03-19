@@ -10,22 +10,12 @@ $codeBgColor = #282c34
   .custom-block-title
     font-weight 600
     margin-bottom -0.4rem
-  &.tip, &.warning, &.danger, &.note
+  &.tip, &.warning, &.danger, &.note, &.cat
     padding .1rem 1.5rem
     border-left-width .5rem
     border-left-style solid
     margin 1rem 0
     border-radius 8px
-  &.note
-    padding .1rem 1.5rem
-    border-left-width .5rem
-    border-left-style solid
-    margin 1rem 0
-  &.cat
-    padding .1rem 1.5rem
-    border-left-width .5rem
-    border-left-style solid
-    margin 1rem 0
   &.cat
     background-color #f3f5f7
     border-color darken(purple, 20%)
@@ -92,19 +82,11 @@ table {
   }
 }
 
+
+
 // Page specific custom style
 .theme-container.custom-page-class {
   /* page-specific rules */
-  .sidebar {
-    border: none;
-    bottom: auto;
-    position: sticky;
-    width: auto;
-    float: left;
-    margin-left: 2em;
-    margin-top: 6em;
-  }
-
   .content {
     width: 80%
   }
@@ -139,19 +121,18 @@ table {
     background: #fff url(/assets/img/search.83621669.svg) 0.8rem 0.8rem no-repeat;
     background-size: 1rem;
   }
-
-
-
-  footer {
-    width: 100%;
-    height: 150px;
-    color: white;
-    background-color: black;
-  }
 }
 
 
-
+  footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: 8rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+  }
 
 
   

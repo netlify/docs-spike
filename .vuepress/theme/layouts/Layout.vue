@@ -24,6 +24,7 @@
       <slot name="page-top" slot="top"/>
       <slot name="page-bottom" slot="bottom"/>
     </Page>
+
     <footer>This is a custom footer</footer>
   </div>
 </template>
