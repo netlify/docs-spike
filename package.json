@@ -4,8 +4,7 @@
   "description": "docs site",
   "main": "index.js",
   "scripts": {
-    "docs:build": "vuepress build",
-    "dev": "vuepress dev"
+    "docs:build": "vuepress build"
   },
   "keywords": [],
   "author": "luna yu",

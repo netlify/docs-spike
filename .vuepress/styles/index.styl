@@ -4,6 +4,8 @@ $textColor = #2c3e50
 $borderColor = #eaecef
 $codeBgColor = #282c34
 
+body
+  background-color: #F7F8F8
 
 // Custom container
 .custom-block
@@ -36,17 +38,23 @@ $codeBgColor = #282c34
 .fancy p::after
   content " →"
 
+.content{
+  max-width: 880px;
+}
   
 // Table of content
 .table-of-contents
-  float: right;
-  margin-top: 2em;
-  padding-right: -10em;
-  margin-right: -12em;
-  position: sticky;
+  margin-top: -5rem;
+  margin-left: 48rem;
+  position: fixed;
 
   ul
     list-style-type none
+    li 
+      a
+        color #565C5F
+        font-weight 400
+        
 
 .toc-title
   color: $textColor;
