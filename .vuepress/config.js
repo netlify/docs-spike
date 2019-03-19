@@ -1,5 +1,4 @@
 module.exports = {
-  title: "Home",
   extend: "@vuepress/theme-default",
   markdown: {
     config: md => {
@@ -34,7 +33,7 @@ module.exports = {
         title: "Topic Group 1",
         collapsable: true,
         sidebarDepth: 2,
-        children: ["/page-1a", "/page-1b", "/page-1c"]
+        children: ["/page-1b", "/page-1c"]
       },
       {
         title: "Topic Group 2",

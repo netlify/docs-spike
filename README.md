@@ -32,15 +32,16 @@ This is a cheesecake
 
 ## Notification banners
 ### Note
-Dolore tempor laborum consequat sint sint nisi anim amet consectetur adipisicing magna quis esse occaecat. Eu fugiat et quis elit eiusmod proident. Pariatur anim proident nostrud sint enim. Ea pariatur consectetur nisi anim.
 ::: note Note
 If you return a status other than 200 or 204 from one of the event functions shown above, the signup or login for your users will.
 :::
 
+### Warning
 ::: warning
 This is a warning
 :::
 
+### Danger
 ::: danger DANGER
 This is a danger warning
 :::
@@ -74,5 +75,17 @@ Modify it in the `theme.styl` file works.
 :::
 
 ## Right side bar
-Tempor elit aliqua anim ipsum do consectetur id nisi. Non Lorem eu eu cillum sunt. Minim aliquip id magna sit commodo laborum ipsum sit eu veniam esse sunt nostrud. Ad est excepteur duis ea incididunt ut. Occaecat dolor in ullamco dolor esse laborum aliquip est nisi veniam do proident dolor. Dolor Lorem consectetur elit officia duis aliqua quis magna magna ea. Officia id veniam laborum eiusmod nulla tempor in nisi in.
+The right side bar is implemented as a built in table of content – add `[[toc]]` in the markdown file.
+The problem is it can't use the [`active-header-links`](https://v1.vuepress.vuejs.org/plugin/official/plugin-active-header-links.html#install) plug-in directedly.
+What we could do is to simulate the plug-in function and add it to the table of content widget.
 
+
+## Collapsable side bar
+The build-in side bar has `collapsable` set to be false by default, change it to `true` in the config file under `themeConfig.sidebar.collapasable`.
+
+## External data
+We can use [extendPageData](https://v1.vuepress.vuejs.org/plugin/option-api.html#extendpagedata) plug-in to modify the `$page` object and inject additional data to the components.
+
+## Algolia search
+
+## Was this helpful?
