@@ -87,5 +87,3 @@ The build-in side bar has `collapsable` set to be false by default, change it to
 We can use [extendPageData](https://v1.vuepress.vuejs.org/plugin/option-api.html#extendpagedata) plug-in to modify the `$page` object and inject additional data to the components.
 
 ## Algolia search
-
-## Was this helpful?

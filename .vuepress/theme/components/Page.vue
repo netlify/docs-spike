@@ -5,6 +5,8 @@
     <Content :custom="false"/>
 
     <div class="page-edit">
+      <Form/>
+
       <div class="edit-link" v-if="editLink">
         <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
         <OutboundLink/>
@@ -39,8 +41,12 @@ import {
   outboundRE,
   endingSlashRE
 } from "../layouts/util";
+import Form from "./Form.vue";
 
 export default {
+  components: {
+    Form
+  },
   props: ["sidebarItems"],
 
   computed: {
