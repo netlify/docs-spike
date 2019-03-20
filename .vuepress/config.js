@@ -1,5 +1,4 @@
 module.exports = {
-  title: "Home",
   extend: "@vuepress/theme-default",
   markdown: {
     config: md => {
