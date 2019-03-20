@@ -5,12 +5,16 @@
       <p>Your feedback helps us improve these docs</p>
     </div>
     <div class="feedback-icons">
-      <form name="upvote" method="POST" netlify id="upvote-form">
-        <input type="hidden" name="form-name" value="upvote">
+      <form name="votes" method="POST" netlify id="upvote-form">
+        <input type="hidden" name="form-name" value="votes">
+        <input type="hidden" name="path">
+        <input type="hidden" name="vote">
         <img src="./illo-thumb-up.svg" alt v-on:click="upvote">
       </form>
-      <form name="downvote" method="POST" netlify id="downvote-form">
-        <input type="hidden" name="form-name" value="downvote">
+      <form name="votes" method="POST" netlify id="downvote-form">
+        <input type="hidden" name="form-name" value="votes">
+        <input type="hidden" name="path">
+        <input type="hidden" name="vote">
         <img src="./illo-thumb-down.svg" alt v-on:click="downvote">
       </form>
     </div>
@@ -41,13 +45,14 @@ form {
 </style>
 
 <script>
-function submit(formName) {
+function submit(vote) {
+  const path = window.location.pathname;
   fetch("/", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: "form-name=" + formName
+    body: "form-name=votes&path=" + path + "&vote=" + vote
   });
 }
 
@@ -59,10 +64,10 @@ export default {
   },
   methods: {
     upvote: function(e) {
-      submit("upvote");
+      submit("1");
     },
     downvote: function(e) {
-      submit("downvote");
+      submit("-1");
     }
   }
 };
