@@ -1,5 +1,8 @@
 <template>
   <header class="navbar">
+    <div class="custom-logo">
+      <img src="./logo.svg" alt width="196" height="40">
+    </div>
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link :to="$localePath" class="home-link">
@@ -92,6 +95,7 @@ $navbar-horizontal-padding = 1.5rem;
   padding: $navbar-vertical-padding $navbar-horizontal-padding;
   line-height: $navbarHeight - 1.4rem;
   position: relative;
+  align-items: center;
   height: 6rem;
 
   a, span, img {
@@ -112,8 +116,12 @@ $navbar-horizontal-padding = 1.5rem;
     position: relative;
   }
 
+  .custom-logo {
+    width: 22vw;
+    margin-left: 3rem;
+  }
+
   .links {
-    margin: auto;
     box-sizing: border-box;
     background-color: white;
     white-space: nowrap;
@@ -123,6 +131,7 @@ $navbar-horizontal-padding = 1.5rem;
     .search-box {
       flex: 0 0 auto;
       vertical-align: top;
+      margin-right: 0;
 
       input {
         height: 2.4rem;
