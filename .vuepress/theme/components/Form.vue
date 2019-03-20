@@ -5,15 +5,13 @@
       <p>Your feedback helps us improve these docs</p>
     </div>
     <div class="feedback-icons">
-      <form name="upvote" method="POST" netlify>
-        <button type="submit" v-on:click="votes">
-          <img src="./illo-thumb-up.svg" alt>
-        </button>
+      <form name="upvote" method="POST" netlify id="upvote-form" @submit.prevent="handleSubmit">
+        <input type="hidden" name="form-name" value="upvote">
+        <img src="./illo-thumb-up.svg" alt v-on:click="votes">
       </form>
-      <form name="downvote" method="POST" netlify>
-        <span v-on:click="votes" type="submit">
-          <img src="./illo-thumb-down.svg" alt>
-        </span>
+      <form name="downvote" method="POST" netlify id="downvote-form">
+        <input type="hidden" name="form-name" value="downvote">
+        <img src="./illo-thumb-down.svg" alt v-on:click="votes">
       </form>
     </div>
   </div>
@@ -44,12 +42,15 @@ form {
 
 <script>
 export default {
+  data() {
+    return {
+      upvoteCount: 0
+    };
+  },
   methods: {
     votes: function(e) {
-      e.preventDefault();
-      let count = 0;
-      count += 1;
-      console.log(count);
+      this.upvoteCount = e.target.value;
+      console.log(e.target.value);
     }
   }
 };
