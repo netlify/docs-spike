@@ -5,18 +5,12 @@
       <p>Your feedback helps us improve these docs</p>
     </div>
     <div class="feedback-icons">
-      <form name="votes" method="POST" netlify id="upvote-form">
-        <input type="hidden" name="form-name" value="votes">
+      <form name="votes" method="POST" netlify>
         <input type="hidden" name="path">
         <input type="hidden" name="vote">
-        <img src="./illo-thumb-up.svg" alt v-on:click="upvote">
       </form>
-      <form name="votes" method="POST" netlify id="downvote-form">
-        <input type="hidden" name="form-name" value="votes">
-        <input type="hidden" name="path">
-        <input type="hidden" name="vote">
-        <img src="./illo-thumb-down.svg" alt v-on:click="downvote">
-      </form>
+      <img src="./illo-thumb-up.svg" alt v-on:click="upvote">
+      <img src="./illo-thumb-down.svg" alt v-on:click="downvote">
     </div>
   </div>
 </template>
