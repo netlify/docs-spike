@@ -1,7 +1,9 @@
 <template>
   <header class="navbar">
     <div class="custom-logo">
-      <img src="./logo.svg" alt width="196" height="40">
+      <a href="/">
+        <img src="./logo.svg" alt width="196" height="40">
+      </a>
     </div>
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
