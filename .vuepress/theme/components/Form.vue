@@ -41,6 +41,16 @@ form {
 </style>
 
 <script>
+function submit(formName) {
+  fetch("/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "form-name=" + formName
+  });
+}
+
 export default {
   data() {
     return {
@@ -49,17 +59,11 @@ export default {
   },
   methods: {
     upvote: function(e) {
-      fetch("/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        body: {
-          "form-name": "upvote"
-        }
-      });
+      submit("upvote");
     },
-    downvote: function(e) {}
+    downvote: function(e) {
+      submit("downvote");
+    }
   }
 };
 </script>
