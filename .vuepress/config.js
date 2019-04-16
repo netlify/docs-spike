@@ -43,7 +43,6 @@ module.exports = {
     ]
   },
   plugins: [
-    ["@vuepress/back-to-top", true],
     [
       "@vuepress/active-header-links",
       {
