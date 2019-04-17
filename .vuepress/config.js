@@ -28,19 +28,31 @@ module.exports = {
   },
   themeConfig: {
     displayAllHeaders: true,
-    sidebar: [
-      {
-        title: "Topic Group 1",
-        collapsable: true,
-        sidebarDepth: 2,
-        children: ["/page-1b", "/page-1c"]
-      },
-      {
-        title: "Topic Group 2",
-        collapsable: false,
-        children: ["/page-2a", "/page-2b", "/page-2c"]
-      }
-    ]
+    sidebar: {
+      root: [
+        "",
+        "/root/foo/",
+        "/root/bar/",
+        {
+          title: "root",
+          sidebarDepth: 0,
+          children: [
+            "/root/root-header",
+            {
+              title: "foo",
+              sidebarDepth: 0,
+              children: ["/root/foo/foo-header", "/root/foo/foo-footer"]
+            },
+            {
+              title: "bar",
+              sidebarDepth: 0,
+              children: ["/root/bar/bar-header", "/root/bar/bar-footer"]
+            },
+            "/root/root-footer"
+          ]
+        }
+      ]
+    }
   },
   plugins: [
     [
