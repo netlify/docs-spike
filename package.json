@@ -4,7 +4,8 @@
   "description": "docs site",
   "main": "index.js",
   "scripts": {
-    "docs:build": "vuepress build"
+    "docs:build": "vuepress build",
+    "docs:dev": "vuepress dev"
   },
   "keywords": [],
   "author": "luna yu",
@@ -14,8 +15,8 @@
     "@vuepress/plugin-container": "^1.0.0-alpha.44"
   },
   "dependencies": {
-    "vuepress": "^1.0.0-alpha.25",
-    "@vuepress/theme-default": "^1.0.0-alpha.0",
+    "vuepress": "^1.0.0-alpha.36",
+    "@vuepress/theme-default": "^1.0.0-alpha.36",
     "markdown-it-include": "^1.1.0"
   }
 }
