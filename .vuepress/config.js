@@ -30,15 +30,45 @@ module.exports = {
     displayAllHeaders: true,
     sidebar: [
       {
-        title: "Topic Group 1",
+        title: "topic-group-1",
         collapsable: true,
-        sidebarDepth: 2,
-        children: ["/page-1b", "/page-1c"]
+        sidebarDepth: 0,
+        children: [
+          "/topic-group-1/page-1b", 
+          "/topic-group-1/page-1c",
+          {
+            title: 'topic-group-1/page-1a',
+            path: '/topic-group-1/page-1a/',
+            children: [
+              ['/', 'README'],
+              '/topic-group-1/page-1a/sub-page-1a-a',
+              '/topic-group-1/page-1a/sub-page-1a-b'
+            ]
+          }
+        ]
       },
       {
         title: "Topic Group 2",
         collapsable: false,
-        children: ["/page-2a", "/page-2b", "/page-2c"]
+        children: [
+          "/topic-group-2/page-2a",
+          {
+            title: 'Page 2B',
+            children: [
+              ['/', 'README'],
+              '/topic-group-2/page-2b/sub-page-2b-a',
+              '/topic-group-2/page-2b/sub-page-2b-b'
+            ]
+          },
+          "/topic-group-2/page-2c",
+          {
+            title: 'Page 2D',
+            children: [
+              ['/', 'index'],
+              '/topic-group-2/page-2b/sub-page-2d-a'
+            ]
+          }
+        ]
       }
     ]
   },
