@@ -1,0 +1,4 @@
+[dev]
+  command = "vuepress dev" # Command to start your dev server
+  port = 8081 # Port that the dev server will be listening on
+  publish = "dist" # If you use a _redirect file, provide the path to your static content folder
